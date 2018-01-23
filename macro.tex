@@ -1,0 +1,29 @@
+\newcommand{\picHere}[3] { %
+\begin{figure}[htp] %
+\begin{center} %
+\resizebox{!}{!}{\includegraphics{pictures/#1}} %
+\caption{{\small#2}} %
+\label{#3} %
+\end{center} %
+\end{figure} %
+}
+
+\newcommand{\picHereWidth}[4] { %
+\begin{figure}[htp] %
+\begin{center} %
+\resizebox{!}{!}{\includegraphics[#4]{pictures/#1}} %
+\caption{{\small#2}} %
+\label{#3} %
+\end{center} %
+\end{figure} %
+}
+
+\newcommand{\picHereRes}[3] { %
+\begin{figure}[htp] %
+\begin{center} %
+\resizebox{!}{!}{\includegraphics[totalheight=0.8\textheight]{pictures/#1}} %
+\caption{#2} %
+\label{#3} %
+\end{center} % 
+\end{figure} %
+}

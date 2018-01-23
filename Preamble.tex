@@ -1,0 +1,79 @@
+%\usepackage[latin1]{inputenc} 
+
+\usepackage[final]{graphicx}
+%\usepackage{epstopdf}
+\usepackage{url}
+%\usepackage[expert,vargreek]{lucidbrb}
+
+%\usepackage{mya4page} % not used, because now is implemented in the class 
+\usepackage{amsmath}
+%\usepackage{hyperref}
+\usepackage{bibnames}
+\usepackage{path}
+\usepackage{subfigure}
+\usepackage{fancyhdr}                    % Fancy Header and Footer 
+
+%\usepackage{setspace}
+
+%\usepackage{footmisc}
+%\usepackage[perpage,symbol*]{footmisc} 
+
+
+%---------------------------------------------------------------
+\usepackage{color}
+\definecolor{listinggray}{gray}{0.9}
+%---------------------------------------------------------------
+%\usepackage[copy=false, edit=false]{pdfcrypt}
+
+%---------------------------------------------------------------
+\usepackage{listings}
+\lstset{language=Java}
+\lstset{basicstyle=\footnotesize\small,%ttfamily,%\small,
+tabsize=4,
+tab=$\to$,
+float=tbph,
+extendedchars=true,
+breaklines,
+% prebreak={\space\MyHookSign},
+% frame=single,
+showtabs=false,
+showspaces=false,
+showstringspaces=false,
+keywordstyle=\color{red}\bfseries,
+identifierstyle=\bf\ttfamily,
+aboveskip=\bigskipamount,
+}
+\lstset{captionpos=b}
+\lstset{keywordstyle=\color{blue}\bfseries\bf}
+\lstset{backgroundcolor=\color{listinggray}, rulecolor=\color{blue}}
+\lstset{linewidth=\textwidth}
+\lstset{stepnumber=5}
+\lstset{numbers=left}
+\lstset{numberstyle=\tiny\color{blue}}
+\lstset{commentstyle=\color{magenta}\textit, stringstyle=\upshape,
+	showstringspaces=false}
+\lstset{frame=trBL,frameround=tttt}
+%---------------------------------------------------------------
+
+%% Hyperref setup
+\usepackage{hyperref}
+\hypersetup{
+	 a4paper,
+   colorlinks=true,
+   linkcolor=black,
+   filecolor=black,
+   citecolor=black,
+   urlcolor=black,
+   plainpages=false,
+   pdftitle={ \PaperTitle },
+   pdfsubject={ \PaperSubject },
+   pdfauthor={ \ThesisAuthor <ronny.hartanto@ais.fraunhofer.de>},
+   pdfkeywords={ \Paperkeywords },
+   bookmarksnumbered=true,
+   pdfpagemode=UseOutlines,
+   pdfpagelayout=SinglePage,  
+   bookmarksopen=true
+}
+%\usepackage[copy=true, edit=false, annotate=true]{pdfcrypt}
+
+
