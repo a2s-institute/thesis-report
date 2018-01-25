@@ -1,0 +1,99 @@
+%
+% LaTeX2e Style for MAS R&D and master thesis reports
+% Author: Argentina Ortega Sainz, Hochschule Bonn-Rhein-Sieg, Germany
+% Please feel free to send issues, suggestions or pull requests to:
+% Based on the template created by Ronni Hartanto in 2003
+%
+
+\documentclass[thesis]{mas_report}
+% \usepackage{mas_report}
+
+\author{A. Ortega}
+
+% ****************************************************
+% THIS INFORMATION SHOULD BE UPDATED FOR YOUR REPORT
+% ****************************************************
+\author{Your Name}
+\title{Project title}
+\project{Master Thesis or R\&D Project}
+\supervisor{%
+First supervisor\\
+Second Supervisor\\
+Third Supervisor
+}
+\date{Month 20XX}
+
+\begin{document}
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+% \include{Preface}
+
+%\include{acronyms} % Include a List of Acronyms section using acronyms.tex where they are defined
+%\printglossary[type=\acronymtype, title=List of Acronyms, toctitle=List of Acronyms]
+
+% \printnoidxglossary[sort=word, type=acronym, title=List of Acronyms, toctitle=List of Acronyms] % sort=word]
+% \cleartoverso % Force a break to an even page
+
+% \begin{abstract}
+%
+% \end{abstract}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT CHAPTERS
+%-------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+% \chapterstyle{thesis}
+% \pagestyle{mainmatter}
+
+\include{chapters/ch01_introduction}
+\include{chapters/ch02_stateoftheart}
+\include{chapters/ch03_concept}
+\include{chapters/ch04_results}
+\include{chapters/ch05_conclusion}
+
+
+
+%-------------------------------------------------------------------------------
+%	APPENDIX
+%-------------------------------------------------------------------------------
+
+\appendix
+% \include{chapters/appendix}
+
+\backmatter
+
+%-------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+% \chapterstyle{references}
+%\bibliographystyle{plainnat} % Use the plainnat bibliography style
+\bibliographystyle{unsrtnat}
+%\bibliographystyle{unsrt}
+\bibliography{bibliography.bib} % Use the bibliography.bib file as the source of references
+
+%-------------------------------------------------------------------------------
+%	INDEX
+%-------------------------------------------------------------------------------
+
+
+
+
+
+\end{document}
