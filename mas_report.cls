@@ -102,6 +102,32 @@ Supervised by\par
 }
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Declaration of authorship
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\statementpage{%
+    \thispagestyle{empty}
+    \hbox{}
+    \vfill
+    \noindent
+    I, the undersigned below, declare that this work has not previously been
+    submitted to this or any other university, and that unless otherwise stated,
+    it is entirely my own work.
+    \vskip 60pt
+
+    \hrule width 4cm
+    \hfill \hspace{5cm}
+    \hrulefill
+
+    \vskip -3pt
+
+    \leftline{\hspace{1.5cm} Date \hfill \@author \hspace{1.5cm}}
+
+    \vskip 60pt
+    \clearpage
+}%
 %%%%%%%%%%%%%%%%%%%%%
 % Abstract
 %%%%%%%%%%%%%%%%%%%%%
