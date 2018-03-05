@@ -154,4 +154,17 @@ Supervised by\par
 \chapter*{Abstract}
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{acknowledgements}{%
+\chapter*{Acknowledgements}
+% \cleardoublepage\thispagestyle{empty}\null\vfill\begin{center}%
+    % \bfseries Acknowledgements\end{center}
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \endinput
