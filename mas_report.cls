@@ -116,4 +116,12 @@ of Master of Science in Autonomous Systems.}
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{abstract}{%
+\chapter*{Abstract}
+}
+
 \endinput
