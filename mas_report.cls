@@ -38,6 +38,7 @@
 \usepackage{amsmath,amssymb,theorem} % Math packages
 \usepackage{listings} % Required for including snippets of code
 \usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[titletoc]{appendix}
 
 \usepackage{lipsum} % Used to test
