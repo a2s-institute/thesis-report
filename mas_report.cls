@@ -169,4 +169,26 @@ Supervised by\par
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE LAYOUT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SIDE MARGINS:
+\oddsidemargin 28pt      %   Left margin on odd-numbered pages.
+\evensidemargin 0pt      %   Left margin on even-numbered pages.
+\marginparwidth 40pt     %   Width of marginal notes.
+
+\marginparsep 12pt          % Horizontal space between outer margin and
+                            % marginal note
+\textwidth 15cm             % width of text
+
+% VERTICAL SPACING:
+                         % Top of page:
+\topmargin  10pt          %    distance from top of page to running head
+\headheight 14pt         %    Height of box containing running head.
+\headsep  1cm            %    Space between running head and text.
+\textheight 8.8in        %    space for text
+\footskip 30pt           %    Distance from baseline of box containing foot
+                         %    to baseline of last line of text.
+
+
 \endinput
