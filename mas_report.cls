@@ -41,48 +41,32 @@
 
 
 \usepackage{lipsum} % Used to test
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand\bibname{References} %Change Bibliography to References
 
 \newcommand*{\project}[1]{\gdef\@project{#1}%
 }
-\newcommand*{\@project}{Final Year Project}
+\newcommand*{\@project}{Please select Master Thesis or R\&D Project}
 
-\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}%
+\newcommand*{\supervisors}[1]{\gdef\@supervisors{#1}%
 }
-\newcommand*{\@supervisor}{\texttt{\string\supervisor} currently
+\newcommand*{\@supervisors}{\texttt{\string\supervisors} currently
 not set. Please fix this.}
 
-% \addtoiargdef{\supervisor}{%
-% %   \begingroup\let\footnote\@gobble}{%
-% %   \begingroup
-% %     \renewcommand{\thanks}[1]{}
-% %     \renewcommand{\and}{\unskip, }
-% %     \renewcommand{\andnext}{\unskip, }
-% %     \renewcommand{\thanksmark}[1]{}
-% %     \renewcommand{\thanksgap}[1]{}
-% %     \protected@xdef\thesupervisor{#1}
-% %   \endgroup\endgroup}
-% % \newcommand{\presupervisor}[1]{\def\@bspresupervisor{#1}}
-% % \newcommand{\postsupervisor}[1]{\def\@bspostsupervisor{#1}}
-% % \renewcommand{\maketitlehookc}{%
-% %   {\@bspresupervisor \@director \@bspostsupervisor}%
-% }
-
-% \presupervisor{\begin{center}
-%   \large \lineskip .5em%
-%   \begin{tabular}[t]{c}}
-% \postsupervisor{\end{tabular}\par\end{center}}
-
 % Colors
-\definecolor{hbrsblue}{RGB}{11,161,226}
+\definecolor{hbrs}{RGB}{11,161,226}
 
 \definecolor{keywords}{RGB}{0,100,0}
 \definecolor{comments}{RGB}{0,100,50}
 \definecolor{stringred}{RGB}{160,0,0}
 \definecolor{codeblue}{RGB}{0,0,150}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
 {\raggedleft%
@@ -101,9 +85,10 @@ not set. Please fix this.}
 
 Supervised by\par
 \vskip 8pt
-\@supervisor\unskip\strut\par
-% \ifcsname @supervisor\endcsname
-% \\ \@supervisor \fi \\
+{\large
+\@supervisors\unskip\strut\par
+}% \ifcsname @supervisors\endcsname
+% \\ \@supervisors \fi \\
 % \vfill
 
 \vfill
