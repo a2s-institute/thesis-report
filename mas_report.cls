@@ -128,6 +128,24 @@ Supervised by\par
     \vskip 60pt
     \clearpage
 }%
+
+%%%%%%%%%%%%%%%%%%%%
+% Copyright
+%%%%%%%%%%%%%%%%%%%%
+
+\def\copyrightpage{%
+    \hbox{ }
+    \vfill
+    \begin{center}
+        \copyright\ Copyright \@copyrightyear \\
+        by \\
+        \@author \\
+        All Rights Reserved \\ [12pt]
+    \end{center}
+    \clearpage
+}%
+
+
 %%%%%%%%%%%%%%%%%%%%%
 % Abstract
 %%%%%%%%%%%%%%%%%%%%%
