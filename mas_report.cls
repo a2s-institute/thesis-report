@@ -74,13 +74,17 @@ not set. Please fix this.}
 	\includegraphics[width=8cm]{images/Logo-HBRS-cyan.png}\par
 }\vspace{1cm}
 	\centering
-% {\scshape\LARGE Columbidae University \par}
-% \vspace{1cm}
-{\scshape\Large\@project\unskip\strut\par}
+{\Large\@project\unskip\strut\par}
 \vspace{1.5cm}
 {\huge\bfseries\@title\unskip\strut\par}
 \vspace{2cm}
 {\Large\itshape\@author\unskip\strut\par}
+\vfill
+
+{\normalsize Submitted to the Hochschule Bonn-Rhein-Sieg,\\
+Department of Computer Science\\
+in partial fullfilment of the requirements for the degree\\
+of Master of Science in Autonomous Systems.}
 \vfill
 
 Supervised by\par
@@ -92,10 +96,6 @@ Supervised by\par
 % \vfill
 
 \vfill
-{\large Submitted to the Department of Computer Science\\
-in partial fullfilment of the requirements for the degree\\
-of Master of Science in Autonomous Systems.}
-\vskip 20pt
 
 {\large \@date\par}
 \end{titlepage}
