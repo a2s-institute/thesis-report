@@ -31,16 +31,18 @@
 % Load class options
 \LoadClass[10pt,a4paper,twosides]{book}
 
-% \renewcommand{\familydefault}{\sfdefault}
-
-% Packages
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[numbers]{natbib}\citeindextrue % Round brackets around citations, change to square for square brackets
+\usepackage{graphicx} % Required to include images
+\usepackage{amsmath,amssymb,theorem} % Math packages
+\usepackage{listings} % Required for including snippets of code
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage[titletoc]{appendix}
 
 \usepackage{lipsum} % Used to test
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Definitions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
