@@ -66,9 +66,11 @@ Your abstract
 
 \include{chapters/ch01_introduction}
 \include{chapters/ch02_stateoftheart}
-\include{chapters/ch03_concept}
-\include{chapters/ch04_results}
-\include{chapters/ch05_conclusion}
+\include{chapters/ch03_methodology}
+\include{chapters/ch04_solution}
+\include{chapters/ch05_evaluation}
+\include{chapters/ch06_results}
+\include{chapters/ch07_conclusion}
 
 
 
@@ -76,8 +78,12 @@ Your abstract
 %	APPENDIX
 %-------------------------------------------------------------------------------
 
-\appendix
-% \include{chapters/appendix}
+% \appendix
+
+\begin{appendices}
+\include{chapters/appendix}
+
+\end{appendices}
 
 \backmatter
 
@@ -85,15 +91,11 @@ Your abstract
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
 % \chapterstyle{references}
-%\bibliographystyle{plainnat} % Use the plainnat bibliography style
-\bibliographystyle{unsrtnat}
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{plainnat} % Use the plainnat bibliography style
+% \bibliographystyle{unsrtnat}
 %\bibliographystyle{unsrt}
 \bibliography{bibliography.bib} % Use the bibliography.bib file as the source of references
-
-%-------------------------------------------------------------------------------
-%	INDEX
-%-------------------------------------------------------------------------------
-
 
 
 

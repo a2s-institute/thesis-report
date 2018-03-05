@@ -40,6 +40,7 @@
 \usepackage{graphicx}
 
 
+\usepackage{lipsum} % Used to test
 % Definitions
 
 \newcommand*{\project}[1]{\gdef\@project{#1}%
