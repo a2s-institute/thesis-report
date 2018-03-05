@@ -191,4 +191,49 @@ Supervised by\par
                          %    to baseline of last line of text.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header and footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{titlesec}
+
+\let\footruleskip\undefined
+\usepackage{fancyhdr}% http://ctan.org/pkg/fancyhdr
+
+%% Page style for title pages.
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \renewcommand*\headrulewidth{0pt}
+    \renewcommand*\footrulewidth{0pt}
+    % \fancyfoot[C]{\thepage}
+    \fancyfoot[C]{}
+}
+
+%% Fancy style for the main matter.
+\fancypagestyle{mainmatter}{%
+    \fancyhf{}
+    \renewcommand*\headrulewidth{0.5pt}
+    %% Page numbers on the top left and top right.
+    \fancyfoot[C]{\thepage}
+    %% Chapter name on the left (even) page.
+    \fancyhead[RE]{\nouppercase{\rightmark}}
+    %% Section name on the right (odd) page.
+    \fancyhead[LO]{\nouppercase{\leftmark}}
+}
+
+
+%% Print the current chapter and section at the top of the page in cyan.
+\renewcommand*\chaptermark[1]{\markboth{\textcolor{hbrs} {\thechapter.\ } #1}{}}
+\renewcommand*\sectionmark[1]{\markright{\textcolor{hbrs}{\thesection.\ } #1}}
+
+%% Chapter titles have the same layout as parts.
+\titleformat{\chapter}[display]
+    {\flushright}%format
+    {\color{gray}\fontsize{68pt}{68pt}\selectfont\bfseries\thechapter}%label
+    {0pt}%sep
+    {\Huge\color{hbrs}}%before code
+    [\vspace{2cm}]
+
+\titlespacing{\chapter}{0pt}{0pt}{2\baselineskip}
+
+
 \endinput
