@@ -8,16 +8,18 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mas_report}[2018/01/25 The MAS report class]
 
-\newcommand{\reporttype}[1]{#1}
 \RequirePackage{xcolor}
 \RequirePackage{ifthen}
 \definecolor{slcolor}{HTML}{882B21}
 
+\newcommand*{\project}[1]{\gdef\@project{#1}%
+}
+\newcommand*{\@project}{\texttt{project} not set. Please select Master Thesis or R\&D Project}
 
 % Options
 \DeclareOption{onecolumn}{\OptionNotUsed}
-\DeclareOption{thesis}{}
-\DeclareOption{rnd}{}
+\DeclareOption{thesis}{\project{Master Thesis}}
+\DeclareOption{rnd}{\project{R\&D Project}}
 
 % Report options
 % \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -49,10 +51,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand\bibname{References} %Change Bibliography to References
-
-\newcommand*{\project}[1]{\gdef\@project{#1}%
-}
-\newcommand*{\@project}{Please select Master Thesis or R\&D Project}
 
 \newcommand*{\supervisors}[1]{\gdef\@supervisors{#1}%
 }
