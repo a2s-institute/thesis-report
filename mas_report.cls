@@ -14,11 +14,11 @@
 
 \newcommand*{\project}[1]{\gdef\@project{#1}%
 }
-\newcommand*{\@project}{\texttt{project} not set. Please select Master Thesis or R\&D Project}
+\newcommand*{\@project}{\texttt{project} not set. Please select Master's Thesis or R\&D Project}
 
 % Options
 \DeclareOption{onecolumn}{\OptionNotUsed}
-\DeclareOption{thesis}{\project{Master Thesis}}
+\DeclareOption{thesis}{\project{Master's Thesis}}
 \DeclareOption{rnd}{\project{R\&D Project}}
 
 % Report options
@@ -42,6 +42,7 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[titletoc]{appendix}
+\usepackage{subfiles}
 
 \usepackage{lipsum} % Used to test
 
@@ -58,7 +59,7 @@
 not set. Please fix this.}
 
 % Colors
-\definecolor{hbrs}{RGB}{11,161,226}
+\definecolor{hbrs}{RGB}{1,106,186}
 
 \definecolor{keywords}{RGB}{0,100,0}
 \definecolor{comments}{RGB}{0,100,50}
@@ -70,11 +71,16 @@ not set. Please fix this.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
-{\raggedleft%
-    \centering
-	\includegraphics[width=8cm]{images/Logo-HBRS-cyan.png}\par
-}\vspace{1cm}
-	\centering
+    \begin{minipage}{0.475\textwidth}
+        \centering
+	   \includegraphics[height=1.3cm]{images/Logo-HBRS-cyan.png}
+    \end{minipage}
+    \begin{minipage}{0.475\textwidth}
+        \centering
+	   \includegraphics[height=1.3cm]{images/b-it.pdf}
+    \end{minipage}
+\centering
+\vfill
 {\Large\@project\unskip\strut\par}
 \vspace{1.5cm}
 {\huge\bfseries\@title\unskip\strut\par}
@@ -82,10 +88,10 @@ not set. Please fix this.}
 {\Large\itshape\@author\unskip\strut\par}
 \vfill
 
-{\normalsize Submitted to the Hochschule Bonn-Rhein-Sieg,\\
+{\normalsize Submitted to Hochschule Bonn-Rhein-Sieg,\\
 Department of Computer Science\\
 in partial fullfilment of the requirements for the degree\\
-of Master of Science in Autonomous Systems.}
+of Master of Science in Autonomous Systems}
 \vfill
 
 Supervised by\par
@@ -114,8 +120,8 @@ Supervised by\par
     \vfill
     \noindent
     I, the undersigned below, declare that this work has not previously been
-    submitted to this or any other university, and that unless otherwise stated,
-    it is entirely my own work.
+    submitted to this or any other university and that it is, unless otherwise stated,
+    entirely my own work.
     \vskip 60pt
 
     \hrule width 4cm
