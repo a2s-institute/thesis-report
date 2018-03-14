@@ -31,10 +31,15 @@
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[10pt,a4paper,twosides]{book}
+\LoadClass[12pt,a4paper,twosides]{book}
 
-\renewcommand{\sfdefault}{phv}
-\renewcommand{\familydefault}{\sfdefault}
+% \renewcommand{\sfdefault}{phv}
+% \renewcommand{\familydefault}{\sfdefault}
+
+%-------------------------------------------------------------------------------
+%	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
 \usepackage[numbers]{natbib}\citeindextrue % Round brackets around citations, change to square for square brackets
 \usepackage{graphicx} % Required to include images
 \usepackage{amsmath,amssymb,theorem} % Math packages
@@ -42,11 +47,12 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[titletoc]{appendix}
+\usepackage{setspace}
 \usepackage{subfiles}
 
 \usepackage{lipsum} % Used to test
 
-
+\onehalfspacing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Definitions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,17 +104,12 @@ Supervised by\par
 \vskip 8pt
 {\large
 \@supervisors\unskip\strut\par
-}% \ifcsname @supervisors\endcsname
-% \\ \@supervisors \fi \\
-% \vfill
-
+}
 \vfill
 
 {\large \@date\par}
 \end{titlepage}
 }
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,21 +179,21 @@ Supervised by\par
 % PAGE LAYOUT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SIDE MARGINS:
-\oddsidemargin 28pt      %   Left margin on odd-numbered pages.
-\evensidemargin 0pt      %   Left margin on even-numbered pages.
-\marginparwidth 40pt     %   Width of marginal notes.
+% \oddsidemargin 28pt      %   Left margin on odd-numbered pages.
+% \evensidemargin 0pt      %   Left margin on even-numbered pages.
+% \marginparwidth 40pt     %   Width of marginal notes.
 
-\marginparsep 12pt          % Horizontal space between outer margin and
+% \marginparsep 12pt          % Horizontal space between outer margin and
                             % marginal note
-\textwidth 15cm             % width of text
+% \textwidth 15cm             % width of text
 
 % VERTICAL SPACING:
                          % Top of page:
-\topmargin  10pt          %    distance from top of page to running head
-\headheight 14pt         %    Height of box containing running head.
-\headsep  1cm            %    Space between running head and text.
-\textheight 8.8in        %    space for text
-\footskip 30pt           %    Distance from baseline of box containing foot
+% \topmargin  10pt          %    distance from top of page to running head
+% \headheight 14pt         %    Height of box containing running head.
+% \headsep  1cm            %    Space between running head and text.
+% \textheight 8.8in        %    space for text
+% \footskip 30pt           %    Distance from baseline of box containing foot
                          %    to baseline of last line of text.
 
 
@@ -209,8 +210,8 @@ Supervised by\par
     \fancyhf{}
     \renewcommand*\headrulewidth{0pt}
     \renewcommand*\footrulewidth{0pt}
-    % \fancyfoot[C]{\thepage}
-    \fancyfoot[C]{}
+    \fancyfoot[C]{\thepage}
+    % \fancyfoot[C]{}
 }
 
 %% Fancy style for the main matter.
