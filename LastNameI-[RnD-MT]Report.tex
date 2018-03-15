@@ -2,6 +2,7 @@
 % LaTeX2e Style for MAS R&D and master thesis reports
 % Author: Argentina Ortega Sainz, Hochschule Bonn-Rhein-Sieg, Germany
 % Please feel free to send issues, suggestions or pull requests to:
+% https://github.com/mas-group/project-report
 % Based on the template created by Ronni Hartanto in 2003
 %
 
@@ -31,14 +32,6 @@ Third Supervisor
 %----------------------------------------------------------------------------------------
 %	PREFACE
 %----------------------------------------------------------------------------------------
-% \include{Preface}
-
-%\include{acronyms} % Include a List of Acronyms section using acronyms.tex where they are defined
-%\printglossary[type=\acronymtype, title=List of Acronyms, toctitle=List of Acronyms]
-
-% \printnoidxglossary[sort=word, type=acronym, title=List of Acronyms, toctitle=List of Acronyms] % sort=word]
-% \cleartoverso % Force a break to an even page
-
 
 \pagestyle{plain}
 
@@ -60,8 +53,6 @@ Thanks to ....
 \listoffigures
 \listoftables
 
-
-
 %-------------------------------------------------------------------------------
 %	CONTENT CHAPTERS
 %-------------------------------------------------------------------------------
@@ -79,12 +70,9 @@ Thanks to ....
 \subfile{chapters/ch07_conclusion}
 
 
-
 %-------------------------------------------------------------------------------
 %	APPENDIX
 %-------------------------------------------------------------------------------
-
-% \appendix
 
 \begin{appendices}
 \subfile{chapters/appendix}
@@ -99,8 +87,5 @@ Thanks to ....
 \addcontentsline{toc}{chapter}{References}
 \bibliographystyle{plainnat} % Use the plainnat bibliography style
 \bibliography{bibliography.bib} % Use the bibliography.bib file as the source of references
-
-
-
 
 \end{document}
