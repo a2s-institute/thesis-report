@@ -23,16 +23,20 @@
 \DeclareOption{rnd}{\project{R\&D Project}}
 
 % Report options
-% \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-
+\DeclareOption{twosides}{
+  \PassOptionsToClass{\CurrentOption}{book}
+}
+\DeclareOption{oneside}{
+    \PassOptionsToClass{\CurrentOption}{book}
+}
 % Execute the default option
 \ExecuteOptions{thesis}
-
+\ExecuteOptions{twosides}
 % Process other options
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[12pt,a4paper,twosides]{book}
+\LoadClass[12pt,a4paper]{book}
 
 % \renewcommand{\sfdefault}{phv}
 % \renewcommand{\familydefault}{\sfdefault}
