@@ -2,6 +2,7 @@
 % LaTeX2e Style for MAS R&D and master thesis reports
 % Author: Argentina Ortega Sainz, Hochschule Bonn-Rhein-Sieg, Germany
 % Please feel free to send issues, suggestions or pull requests to:
+% https://github.com/mas-group/project-report
 % Based on the template created by Ronni Hartanto in 2003
 %
 
@@ -49,6 +50,8 @@
 \usepackage[titletoc]{appendix}
 \usepackage{setspace}
 \usepackage{subfiles}
+% \usepackage{showframe}
+
 
 \usepackage{lipsum} % Used to test
 
@@ -77,6 +80,8 @@ not set. Please fix this.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
+    \newgeometry{left=3cm, bottom=3cm}
+
     \begin{minipage}{0.475\textwidth}
         \centering
 	   \includegraphics[height=1.3cm]{images/Logo-HBRS-cyan.png}
@@ -109,6 +114,7 @@ Supervised by\par
 
 {\large \@date\par}
 \end{titlepage}
+\restoregeometry
 }
 
 
@@ -182,19 +188,19 @@ Supervised by\par
 % \oddsidemargin 28pt      %   Left margin on odd-numbered pages.
 % \evensidemargin 0pt      %   Left margin on even-numbered pages.
 % \marginparwidth 40pt     %   Width of marginal notes.
-
+%
 % \marginparsep 12pt          % Horizontal space between outer margin and
-                            % marginal note
+%                             % marginal note
 % \textwidth 15cm             % width of text
-
-% VERTICAL SPACING:
-                         % Top of page:
+%
+% % VERTICAL SPACING:
+%                          % Top of page:
 % \topmargin  10pt          %    distance from top of page to running head
 % \headheight 14pt         %    Height of box containing running head.
 % \headsep  1cm            %    Space between running head and text.
 % \textheight 8.8in        %    space for text
 % \footskip 30pt           %    Distance from baseline of box containing foot
-                         %    to baseline of last line of text.
+%                          %    to baseline of last line of text.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -232,14 +238,40 @@ Supervised by\par
 \renewcommand*\sectionmark[1]{\markright{\textcolor{hbrs}{\thesection.\ } #1}}
 
 %% Chapter titles have the same layout as parts.
-\titleformat{\chapter}[display]
-    {\flushright}%format
-    {\color{gray}\fontsize{68pt}{68pt}\selectfont\bfseries\thechapter}%label
-    {0pt}%sep
-    {\Huge\color{hbrs}}%before code
-    [\vspace{2cm}]
+\titleformat{\chapter}
+    [display] % sectioning paragraph shape
+    {\flushright}% format to be applied to the title, label, and text
+    {\color{gray}\fontsize{68pt}{68pt}\selectfont\bfseries\thechapter}% sectioning label
+    {0pt}% horizontal separation between label and title body and it must be a length and not be empty.
+    {\Huge\color{hbrs}}% code preceding the title body
+    [\vspace{1cm}] % code following the title body (optional)
 
-\titlespacing{\chapter}{0pt}{0pt}{2\baselineskip}
+\titlespacing{\chapter}{0pt}{0pt}{\baselineskip}
+
+\titleformat{\section}
+    [block]
+    {\flushleft}%format
+    {}%label
+    {0pt}%sep
+    {\bfseries\large\thesection~}%before code
+    % [\vspace{0.5cm}]
+
+\titlespacing{\section}{0pt}{0pt}{5pt}
+
+\titleformat{\subsection}[display]
+    {\flushleft}%format
+    {}%label
+    {0pt}%sep
+    {\bfseries\large\thesubsection~}%before code
+    % [\vspace{0.5cm}]
+
+\titlespacing{\subsection}{0pt}{0pt}{2pt}
+
+%\renewcommand{\cfttoctitlefont}{\color{hbrs}}
+%\renewcommand{\cftlottitlefont}{\flushright\color{hbrs}}
+%\renewcommand{\cftloftitlefont}{\flushright\color{hbrs}}
+
+
 
 
 \endinput
