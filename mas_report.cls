@@ -62,6 +62,9 @@
 
 \renewcommand\bibname{References} %Change Bibliography to References
 
+\newcommand{\thirdpartylogo}[1]{\def\@thirdpartylogo{#1}}
+\thirdpartylogo{}
+
 \newcommand*{\supervisors}[1]{\gdef\@supervisors{#1}%
 }
 \newcommand*{\@supervisors}{\texttt{\string\supervisors} currently
@@ -90,7 +93,18 @@ not set. Please fix this.}
         \centering
 	   \includegraphics[height=1.3cm]{images/b-it.pdf}
     \end{minipage}
-\centering
+    \centering
+    \vfill
+    \ifx\@thirdpartylogo\@empty
+    \relax
+    \else
+    \begin{minipage}{0.4\textwidth}
+        \centering
+	   \includegraphics[height=1.3cm]{\@thirdpartylogo}
+    \end{minipage}
+
+    \fi%
+
 \vfill
 {\Large\@project\unskip\strut\par}
 \vspace{1.5cm}
