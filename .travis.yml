@@ -7,7 +7,7 @@ script:
 - mkdir _build
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build *.tex
 - rm -rf _build
-- zip -r MAS-project-proposal.zip images LastNameI-[RnD-MT]Proposal.tex LastNameI-[RnD-MT]Proposal.pdf README.md mas_proposal.cls rnd_deliverable_timeline.png
+- zip -r MAS-project-report.zip images chapters LastNameI-[RnD-MT]Report.tex LastNameI-[RnD-MT]Report.pdf README.md mas_report.cls bibliography.bib
 deploy:
   provider: releases
   api_key:
