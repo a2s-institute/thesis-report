@@ -54,6 +54,7 @@
 \usepackage[titletoc]{appendix}
 \usepackage{setspace}
 \usepackage{subfiles}
+\usepackage{geometry}
 % \usepackage{showframe}
 
 
