@@ -1,0 +1,18 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive
+  texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended latex-xcolor
+script:
+- mkdir _build
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build *.tex
+- rm -rf _build
+- zip -r MAS-project-report.zip images chapters LastNameI-[RnD-MT]Report.tex LastNameI-[RnD-MT]Report.pdf README.md mas_report.cls bibliography.bib
+deploy:
+  provider: releases
+  api_key:
+    secure: FtXjaLC6bDBH5gCsd95gYuTz87DG23UJYuvlI5nVCk7Le6kCT0+CQ7Y31pYr2UtBWEfeU6PwsxkYiJeRbkoyxK2D4a/g1lddthkGMhK6kRr0JCpfyFZMa3bGeHOSWCkUbXl2+kzdGCQnJhdrq8Cb+6dgh0zyygzUU5f5TyFbSZg0CAIOMZEE6drcYv1Qa00jQsiVSmM+Yo1BDzUiziw7FBm1+oZh2nlAM5J+Mn3m3KRVA6Epbyi7MOcyGwlEnAk5yQK+XwR7LVlnLm195LCRqf7M9Cwrd921kqXK8TqNUshUP/PDfumKLcxfNtGWhR1qYwgJ3OZYLMZeom6dOuzpmYjBqq52D/sZv2zhQ4RMpZr/HZE74FheA47X0R2FUMdoJ8x6ltSgTtY1WmytO5DPTpi7/8rACDJ/0QFMWJl3Z32PqY1h6bTxWFnQd4jrYh1KGduNrDA5ioWxLDq0HIZw1BJXXhPmXH+RpYSgN8OWJ/MLQhync+PM/634lTS3V34HZzvD4IJ/3Fr02ZOPOeODXeDMU5vRmAw1DymEcGXseHx73z7/zuLaNyR23jJ9H8CltZJRJu7samW+LqiSwlOnNODFB0lK4M664eZszZ3e/1stVF+bO1urOfZ5zOmLM0TzH+ibxawObD5rbUei3W+X4mWsbUPB1/7hBmsv4pVXZWk=
+  file: MAS-beamer-template.zip
+  skip_cleanup: true
+  on:
+    tags: true

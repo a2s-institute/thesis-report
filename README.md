@@ -1,4 +1,7 @@
 # Master Thesis Latex Template
+
+[![Build Status](https://travis-ci.org/mas-group/project-report.svg?branch=master)](https://travis-ci.org/mas-group/project-report)
+
 This template is designed for the R&D and master thesis reports of the Master of Science in Autonomous Systems.  
 Based on the template created by Ronni Hartanto in 2003.
 
