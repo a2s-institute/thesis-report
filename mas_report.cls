@@ -53,7 +53,6 @@
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[titletoc]{appendix}
 \usepackage{setspace}
-\usepackage{subfiles}
 \usepackage{geometry}
 % \usepackage{showframe}
 
