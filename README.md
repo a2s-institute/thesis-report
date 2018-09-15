@@ -10,6 +10,14 @@ The logo of an external institution can be added with the command `\thirdpartylo
 
 
 ## Usage
-The main file of the report is `LastNameI-[RnD-MT]Report.tex`; this should be changed to match the naming convention specified by the wiki, e.g. for an R&D, John Doe would name his file `DoeJ-RnDReport.tex`.
+The main file of the report is `report.tex`; chapters, appendices, and the abstract are given in separate files in the `chapters` directory.
+
+When submitting a report, the name of the pdf should be changed to match the naming convention specified in the MAS wiki, namely
+
+```
+LastNameI-[RnD-MT]Report
+```
+
+Examples: For an R&D, John Doe would name his file `DoeJ-RnDReport.pdf`; for a thesis, John Doe would name the file `DoeJ-MTReport.pdf`.
 
 If there are any problems, don't hesitate to let us know! You can open an issue [here](https://github.com/mas-group/project-report/issues/new).
