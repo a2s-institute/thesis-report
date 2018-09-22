@@ -32,22 +32,12 @@ Third Supervisor
 %----------------------------------------------------------------------------------------
 %	PREFACE
 %----------------------------------------------------------------------------------------
-
 \pagestyle{plain}
-
-
 \cleardoublepage
 \statementpage
 
-\begin{abstract}
-Your abstract
-\end{abstract}
-
-
-\begin{acknowledgements}
-Thanks to ....
-\end{acknowledgements}
-
+\subfile{chapters/abstract}
+\subfile{chapters/acknowledgment}
 
 \tableofcontents
 \listoffigures
@@ -56,7 +46,6 @@ Thanks to ....
 %-------------------------------------------------------------------------------
 %	CONTENT CHAPTERS
 %-------------------------------------------------------------------------------
-
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \pagestyle{mainmatter}
@@ -69,14 +58,11 @@ Thanks to ....
 \subfile{chapters/ch06_results}
 \subfile{chapters/ch07_conclusion}
 
-
 %-------------------------------------------------------------------------------
-%	APPENDIX
+%	APPENDICES
 %-------------------------------------------------------------------------------
-
 \begin{appendices}
-\subfile{chapters/appendix}
-
+    \subfile{chapters/appendix}
 \end{appendices}
 
 \backmatter
