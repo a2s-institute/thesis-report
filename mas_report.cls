@@ -25,9 +25,11 @@
 % Report options
 \DeclareOption{twosides}{
   \PassOptionsToClass{\CurrentOption}{book}
+  \PassOptionsToPackage{left=4cm,right=2cm}{geometry}
 }
 \DeclareOption{oneside}{
     \PassOptionsToClass{\CurrentOption}{book}
+    \PassOptionsToPackage{left=4cm,right=2cm, asymmetric}{geometry}
 }
 % Execute the default option
 \ExecuteOptions{thesis}
