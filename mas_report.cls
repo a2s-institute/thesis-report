@@ -58,6 +58,9 @@
 \usepackage{subfiles}
 \usepackage{geometry}
 % \usepackage{showframe}
+\usepackage{subcaption}	% Required for sub-figures
+\usepackage{multirow} % Required to enable merging of columns/rows in a table
+\usepackage{rotating} % Required to display sideways tables/figures
 
 
 \usepackage{lipsum} % Used to test
