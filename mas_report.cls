@@ -62,6 +62,12 @@
 \usepackage{multirow} % Required to enable merging of columns/rows in a table
 \usepackage{rotating} % Required to display sideways tables/figures
 \usepackage{hyperref} % Enable hyperlinks
+\hypersetup{		  
+	colorlinks=true,  % Use colored links instead of boxes
+	linkcolor=black,  % Internal link color
+	citecolor=black,  % Citations color
+	urlcolor=black	  % External url color
+}
 
 
 \usepackage{lipsum} % Used to test
