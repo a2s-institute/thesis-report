@@ -61,6 +61,7 @@
 \usepackage{subcaption}	% Required for sub-figures
 \usepackage{multirow} % Required to enable merging of columns/rows in a table
 \usepackage{rotating} % Required to display sideways tables/figures
+\usepackage{hyperref} % Enable hyperlinks
 
 
 \usepackage{lipsum} % Used to test
