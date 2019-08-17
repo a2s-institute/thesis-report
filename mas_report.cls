@@ -25,11 +25,11 @@
 % Report options
 \DeclareOption{twosides}{
   \PassOptionsToClass{\CurrentOption}{book}
-  \PassOptionsToPackage{left=4cm,right=2cm}{geometry}
+  \PassOptionsToPackage{left=3cm,right=2cm}{geometry}
 }
 \DeclareOption{oneside}{
     \PassOptionsToClass{\CurrentOption}{book}
-    \PassOptionsToPackage{left=4cm,right=2cm, asymmetric}{geometry}
+    \PassOptionsToPackage{left=3cm,right=2cm, asymmetric}{geometry}
 }
 % Execute the default option
 \ExecuteOptions{thesis}
@@ -38,7 +38,7 @@
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[12pt,a4paper]{book}
+\LoadClass[10pt,a4paper]{book}
 
 % \renewcommand{\sfdefault}{phv}
 % \renewcommand{\familydefault}{\sfdefault}
@@ -62,7 +62,7 @@
 \usepackage{multirow} % Required to enable merging of columns/rows in a table
 \usepackage{rotating} % Required to display sideways tables/figures
 \usepackage{hyperref} % Enable hyperlinks
-\hypersetup{		  
+\hypersetup{
 	colorlinks=true,  % Use colored links instead of boxes
 	linkcolor=black,  % Internal link color
 	citecolor=black,  % Citations color
@@ -277,7 +277,7 @@ Supervised by\par
     {\Huge\color{hbrs}}% code preceding the title body
     [\vspace{1cm}] % code following the title body (optional)
 
-\titlespacing{\chapter}{0pt}{0pt}{\baselineskip}
+\titlespacing{\chapter}{0pt}{-50pt}{\baselineskip}
 
 \titleformat{\section}
     [block]
