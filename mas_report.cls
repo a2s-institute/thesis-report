@@ -71,6 +71,7 @@
 \usepackage{titling}
 
 \usepackage{lipsum} % Used to test
+\usepackage{lmodern}%
 
 \onehalfspacing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
