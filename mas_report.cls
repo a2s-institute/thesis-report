@@ -62,12 +62,6 @@
 \usepackage{multirow} % Required to enable merging of columns/rows in a table
 \usepackage{rotating} % Required to display sideways tables/figures
 \usepackage{hyperref} % Enable hyperlinks
-\hypersetup{
-	colorlinks=true,  % Use colored links instead of boxes
-	linkcolor=black,  % Internal link color
-	citecolor=black,  % Citations color
-	urlcolor=black	  % External url color
-}
 \usepackage{titling}
 
 \usepackage{lipsum} % Used to test
@@ -98,6 +92,12 @@ not set. Please fix this.}
 }
 \phdproject{}
 
+% PDF Metadata
+\newcommand*{\keywords}[1]{\def\@keywords{#1}}
+\keywords{}
+\newcommand*{\subject}[1]{\def\@subject{#1}}
+\subject{}
+
 % Acknowledgements
 \newcommand{\phdack}[1]{This project was conducted under the supervision of \thephdsupervisor, in the context of their PhD project with the working title `` \@phdproject".}
 
@@ -108,6 +108,24 @@ not set. Please fix this.}
 \definecolor{comments}{RGB}{0,100,50}
 \definecolor{stringred}{RGB}{160,0,0}
 \definecolor{codeblue}{RGB}{0,0,150}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up hyperlinks and PDF metadata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginDocument{%
+  \hypersetup{%
+    colorlinks=true,  % Use colored links instead of boxes
+    linkcolor=black,  % Internal link color
+    citecolor=black,  % Citations color
+    urlcolor=black,  % External url color
+    pagebackref=true, % Enable reference links
+    pdftitle={\@title},
+    pdfsubject={\@subject},
+    pdfauthor={\@author},
+    pdfkeywords={\@keywords}
+  }%
+}
+\RequirePackage{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page
