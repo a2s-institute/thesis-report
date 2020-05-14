@@ -97,6 +97,9 @@ not set. Please fix this.}
 }
 \phdproject{}
 
+% Acknowledgements
+\newcommand{\phdack}[1]{This project was conducted under the supervision of \thephdsupervisor, in the context of their PhD project with the working title `` \@phdproject".}
+
 % Colors
 \definecolor{hbrs}{RGB}{1,106,186}
 
