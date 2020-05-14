@@ -199,17 +199,19 @@ Supervised by\par
 }%
 
 %%%%%%%%%%%%%%%%%%%%
-% Copyright
+% Copyright page
 %%%%%%%%%%%%%%%%%%%%
 
-\def\copyrightpage{%
+\def\copyrightpage#1{%
     \hbox{ }
     \vfill
     \begin{center}
-        \copyright\ Copyright \@copyrightyear \\
-        by \\
-        \@author \\
-        All Rights Reserved \\ [12pt]
+        \copyright\ #1~\@author
+        \ifx\@phdsupervisor\@empty
+        \else
+          , \@phdsupervisor
+        \fi%
+        .~All Rights Reserved \\ [12pt]
     \end{center}
     \clearpage
 }%
