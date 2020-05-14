@@ -68,7 +68,7 @@
 	citecolor=black,  % Citations color
 	urlcolor=black	  % External url color
 }
-
+\usepackage{titling}
 
 \usepackage{lipsum} % Used to test
 
@@ -86,6 +86,16 @@
 }
 \newcommand*{\@supervisors}{\texttt{\string\supervisors} currently
 not set. Please fix this.}
+
+\newcommand*{\phdsupervisor}[1]{\def\@phdsupervisor{#1}%
+}
+\phdsupervisor{}
+
+\newcommand*{\thephdsupervisor}{\@phdsupervisor}
+
+\newcommand*{\phdproject}[1]{\def\@phdproject{#1}%
+}
+\phdproject{}
 
 % Colors
 \definecolor{hbrs}{RGB}{1,106,186}
@@ -152,14 +162,28 @@ Supervised by\par
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Declaration of authorship
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{authorship}{\begin{itemize}}{\end{itemize}}
+
+\newcommand{\caitem}[2]{\item \textbf{#1}: #2}
+
+\newcommand*{\jointwork}[1]{\def\@jointwork{#1}%
+}
+\jointwork{}
+
 \def\statementpage{%
     \thispagestyle{empty}
     \hbox{}
     \vfill
     \noindent
     I, the undersigned below, declare that this work has not previously been
-    submitted to this or any other university and that it is, unless otherwise stated,
-    entirely my own work.
+    submitted to this or any other university and that it is, unless otherwise stated, entirely my own work%
+    \ifx\@jointwork\@empty
+    .
+    \else
+    , except for the following aspects, which were authored as listed below:
+       \@jointwork
+    \fi%
+
     \vskip 60pt
 
     \hrule width 4cm
