@@ -322,7 +322,7 @@ Supervised by\par
     {\flushright}% format to be applied to the title, label, and text
     {\color{gray}\fontsize{68pt}{68pt}\selectfont\bfseries\thechapter}% sectioning label
     {0pt}% horizontal separation between label and title body and it must be a length and not be empty.
-    {\Huge\color{hbrs}}% code preceding the title body
+    {\Huge\color{black}}% code preceding the title body
     [\vspace{1cm}] % code following the title body (optional)
 
 \titlespacing{\chapter}{0pt}{-50pt}{\baselineskip}
