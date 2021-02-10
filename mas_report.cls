@@ -313,8 +313,8 @@ Supervised by\par
 
 
 %% Print the current chapter and section at the top of the page in cyan.
-\renewcommand*\chaptermark[1]{\markboth{\textcolor{hbrs} {\thechapter.\ } #1}{}}
-\renewcommand*\sectionmark[1]{\markright{\textcolor{hbrs}{\thesection.\ } #1}}
+\renewcommand*\chaptermark[1]{\markboth{\textcolor{black} {\thechapter.\ } #1}{}}
+\renewcommand*\sectionmark[1]{\markright{\textcolor{black}{\thesection.\ } #1}}
 
 %% Chapter titles have the same layout as parts.
 \titleformat{\chapter}
