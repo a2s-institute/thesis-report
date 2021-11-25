@@ -47,7 +47,7 @@
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\usepackage[numbers]{natbib}\citeindextrue % Round brackets around citations, change to square for square brackets
+\usepackage{cite}
 \usepackage{graphicx} % Required to include images
 \usepackage{amsmath,amssymb,theorem} % Math packages
 \usepackage{listings} % Required for including snippets of code
