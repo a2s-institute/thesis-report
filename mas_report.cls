@@ -63,7 +63,7 @@
 \usepackage{rotating} % Required to display sideways tables/figures
 \usepackage{hyperref} % Enable hyperlinks
 \usepackage{titling}
-\usepackage{tocbibind}
+\usepackage[nottoc]{tocbibind}
 
 \usepackage{lipsum} % Used to test
 \usepackage{lmodern}%
