@@ -6,11 +6,15 @@ The template is configured to be printed two-sided by default; this can be chang
 
 The logo of an external institution can be added with the command `\thirdpartylogo{path/to/image/}`
 
+## Prerequisites
+
+Please make sure that you have `texlive-full` installed so that you don't face any compilation errors (on Ubuntu systems, you can install it with `sudo apt install texlive-full`).
 
 ## Usage
+
 The main file of the report is `report.tex`; chapters, appendices, and the abstract are given in separate files in the `chapters` directory.
 
-When submitting a report, the name of the pdf should be changed to match the naming convention specified in the MAS wiki, namely
+When submitting a report, the name of the pdf should be changed to match the naming convention specified in the MAS Vital Information, namely
 
 ```
 LastNameI-[RnD-MT]Report
