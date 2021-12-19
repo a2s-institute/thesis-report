@@ -1,4 +1,4 @@
-# Master's Thesis Latex Template [![Build Status](https://travis-ci.org/mas-group/project-report.svg?branch=master)](https://travis-ci.org/mas-group/project-report)
+# Master's Thesis Latex Template [![Build Status](https://app.travis-ci.com/mas-group/project-report.svg?branch=master)](https://app.travis-ci.com/github/mas-group/project-report)
 
 This template is designed for the R&D and master's thesis reports of the Autonomous Systems master's program at Hochschule Bonn-Rhein-Sieg. Based on the template created by Ronni Hartanto in 2003.
 
