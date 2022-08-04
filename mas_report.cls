@@ -64,6 +64,7 @@
 \usepackage{hyperref} % Enable hyperlinks
 \usepackage{titling}
 \usepackage[nottoc]{tocbibind}
+\usepackage{bm} % Required for showing math symbols in boldface
 
 \usepackage{lipsum} % Used to test
 \usepackage{lmodern}%
@@ -351,7 +352,7 @@ Supervised by\par
 %\renewcommand{\cftlottitlefont}{\flushright\color{hbrs}}
 %\renewcommand{\cftloftitlefont}{\flushright\color{hbrs}}
 
-
+\renewcommand{\vec}[1]{\bm{#1}}
 
 
 \endinput
