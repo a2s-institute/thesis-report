@@ -23,3 +23,7 @@ LastNameI-[RnD-MT]Report
 Examples: For an R&D, John Doe would name his file `DoeJ-RnDReport.pdf`; for a thesis, John Doe would name the file `DoeJ-MTReport.pdf`.
 
 If there are any problems, don't hesitate to let us know! You can open an issue [here](https://github.com/mas-group/project-report/issues/new).
+
+## Note About Naming Your Chapters and Sections
+
+The chapter and section names here are very generic since this is a template; however, feel free to modify them/make them more concrete based on your needs! In other words, the names in your report don't have to be the same as in the template (although you will want to keep at least the names of the introduction, state of the art, and conclusions chapters unchanged).
