@@ -199,12 +199,16 @@ Supervised by\par
     \hbox{}
     \vfill
     \noindent
-    I, the undersigned below, declare that this work has not previously been
-    submitted to this or any other university and that it is, unless otherwise stated, entirely my own work%
-    \ifx\@jointwork\@empty
-    .
-    \else
-    , except for the following aspects, which were authored as listed below:
+    [If AI assistants have not been used, use this sentence] I, the undersigned below, declare that this work has not previously been
+    submitted to this or any other university and that it is, unless otherwise stated, entirely my own work.%
+    \newline
+
+    \noindent
+    [If an AI assistant has been used, use this sentence] I, the undersigned below, declare that this work has not previously been
+    submitted to this or any other university and that it is, unless otherwise stated, entirely my own work.
+    The report was in part written with the help of the AI assistant [AI assistant name] as described in the appendix, and I take full responsibility for the AI-generated content.%
+    \ifx\@jointwork
+    The following aspects were authored in collaboration as listed below:
        \@jointwork
     \fi%
 
