@@ -1,6 +1,8 @@
 # Master's Thesis Latex Template [![Build Status](https://app.travis-ci.com/mas-group/project-report.svg?branch=master)](https://app.travis-ci.com/github/mas-group/project-report)
 
-This template is designed for the R&D and master's thesis reports of the Autonomous Systems master's program at Hochschule Bonn-Rhein-Sieg. Based on the template created by Ronni Hartanto in 2003.
+This template is designed for the master's thesis reports of the Autonomous Systems master's program at Hochschule Bonn-Rhein-Sieg. Based on the template created by Ronni Hartanto in 2003.
+
+If you are looking for the R&D report template, please head over to https://github.com/a2s-institute/rnd-project-report.
 
 The template is configured to be printed two-sided by default; this can be changed to a supervisor's preference by passing the option `oneside` instead.
 
